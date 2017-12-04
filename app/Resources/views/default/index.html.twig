@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="main-containera">
+
+<div class="container-fluid">
+
+
+<div class="row" style="padding:10px; background:white;">
+
+<legend>Dashboard</legend>
+
+<div class="col-md-12">
+<b>Processes:</b>
+<br>
+<br>
+</div>
+
+<div class="col-md-1">
+<b>Product</b>
+</div>
+
+<div class="col-md-2">
+<a href="{{path('addproduct')}}">Add Product</a>
+</div>
+<div class="col-md-12">
+</div>
+<div class="col-md-1">
+</div>
+
+<div class="col-md-2">
+<a href="{{path('viewproduct')}}">View Product</a>
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+
+    
+
+
+
+
+
+{% endblock %}

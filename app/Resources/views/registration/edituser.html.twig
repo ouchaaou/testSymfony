@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+
+
+<div class="main-containera">
+
+<div class="container-fluid">
+
+
+<div class="row" style="padding:10px; background:white;">
+
+<legend>Edit User ID</legend>
+
+<div class="categorys col-md-12">
+    {{ form_start(form,{'attr': {'novalidate': 'novalidate'}}) }}
+    {{ form_row(form.company, { 'attr': {'class': 'form-control','label':'Name of Company'} }) }}
+    {{ form_row(form.address, { 'attr': {'class': 'form-control','label':'Address'} }) }}
+    {{ form_row(form.username, { 'attr': {'class': 'form-control','label':'Username'} }) }}
+    {{ form_row(form.email, { 'attr': {'class': 'form-control','label':'Email'} }) }}
+
+    {{ form_row(form.mobile, { 'attr': {'class': 'form-control','label':'Mobile','maxlength':'10','id':'phoneno'} }) }}
+    <input type="button" id="verifymobno" class="btn btn-primary" style="width:87px;display:none;" value="Verify No">
+    <input type="text" id="otpcode" placeholder="Enter OTP Code" class="form-control" style="display:none;">
+    <input type="button" id="verifymymobno" class="btn btn-primary" style="width:87px;display:none;" value="Verify">
+    <input type="button" id="resendverifymobno" class="btn btn-primary" style="width:87px;display:none;" value="Resend">
+
+    {{ form_row(form.plainPassword.first, { 'attr': {'class': 'form-control','label':'Password'} }) }}
+    {{ form_row(form.plainPassword.second, { 'attr': {'class': 'form-control','label':'Confirm Password'} }) }}
+
+    {{ form_row(form.role, { 'attr': {'class': 'form-control','label':'Role'} }) }}
+   
+    <br>
+    <button type="submit" style="width:100%" class="btn btn-primary">Register!</button>
+{{ form_end(form) }}</div>
+
+</div>
+</div>
+   
+<!--Footer Start Here -->
+
+<script type="text/javascript">
+$("#viewreport").click();
+</script>
+
+<script type="text/javascript">
+
+if($("#messageexi").text()=="")
+{
+	$("#closemodal").click();
+}
+else
+{
+	//$("#viewreport").click();
+}
+</script>
+     
+ 
+           
+        
+    
+    
+    
+
+</div>
+
+
+{% endblock %}

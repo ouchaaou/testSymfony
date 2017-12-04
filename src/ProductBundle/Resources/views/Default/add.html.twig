@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="main-containera">
+
+<div class="container-fluid">
+
+
+<div class="row" style="padding:10px; background:white;">
+
+<legend>{{title}}</legend>
+
+<div class="categorys col-md-12">
+    {{ form_start(form) }}
+    
+    {{ form_row(form.name, { 'attr': {'class': 'form-control select2','label':'Page'} }) }}
+
+    {{ form_row(form.description, { 'attr': {'class': 'form-control select2-multiple','label':'Page'} }) }}
+
+    {{ form_row(form.price, { 'attr': {'class': 'form-control select2-multiple','label':'Page'} }) }}
+    
+    <br>
+    <button type="submit" style="width:100%" class="btn btn-primary" id="registerbutton">Save!</button>
+{{ form_end(form) }}</div>
+
+</div>
+</div>
+
+{% endblock %}

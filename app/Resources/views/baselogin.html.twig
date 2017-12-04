@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Symfony Test Panel</title>
+
+<link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" type="text/css">
+
+<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css">
+
+<link rel="stylesheet" href="{{ asset('css/animate.css') }}" type="text/css">
+
+<link rel="stylesheet" href="{{ asset('css/waves.css') }}" type="text/css">
+
+<link rel="stylesheet" href="{{ asset('css/layout.css') }}" type="text/css">
+
+<link rel="stylesheet" href="{{ asset('css/components.css') }}" type="text/css">
+
+<link rel="stylesheet" href="{{ asset('css/plugins.css') }}" type="text/css">
+
+<link rel="stylesheet" href="{{ asset('css/common-styles.css') }}" type="text/css">
+
+<link rel="stylesheet" href="{{ asset('css/pages.css') }}" type="text/css">
+
+<link rel="stylesheet" href="{{ asset('css/responsive.css') }}" type="text/css">
+
+<link rel="stylesheet" href="{{ asset('css/matmix-iconfont.css') }}" type="text/css">
+
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,500italic" rel="stylesheet" type="text/css">
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="images/" type="image/x-icon">
+
+
+</head>
+    <body>
+        {% block header %}{% endblock %}
+
+
+
+<div class="page-content">
+<!--Topbar Start Here -->
+
+
+
+
+
+<div class="main-containera">
+
+<div class="container-fluid">
+
+
+
+
+
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+<script src="{{ asset('js/jquery-1.11.2.min.js')}}"></script>
+
+<script src="{{ asset('js/jquery-migrate-1.2.1.min.js')}}"></script>
+
+    
+
+    
+
+    
+
+    <script src="{{ asset('js/jRespond.min.js') }}"></script>
+
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+    <script src="{{ asset('js/nav-accordion.js') }}"></script>
+
+    <script src="{{ asset('js/hoverintent.js') }}"></script>
+
+    <script src="{{ asset('js/waves.js') }}"></script>
+
+    <script src="{{ asset('js/switchery.js') }}"></script>
+
+    <script src="{{ asset('js/jquery.loadmask.js') }}"></script>
+
+    <script src="{{ asset('js/icheck.js') }}"></script>
+
+    <script src="{{ asset('js/bootbox.js') }}"></script>
+
+    <script src="{{ asset('js/animation.js') }}"></script>
+
+    <script src="{{ asset('js/colorpicker.js') }}"></script>
+
+    <script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
+
+    <script src="{{ asset('js/floatlabels.js') }}"></script>
+
+    
+
+    <script src="{{ asset('js/smart-resize.js') }}"></script>
+
+    <script src="{{ asset('js/layout.init.js') }}"></script>
+
+    <script src="{{ asset('js/matmix.init.js') }}"></script>
+
+    <script src="{{ asset('js/retina.min.js') }}"></script>
+
+    
+
+
+        {% endblock %}
+    </body>
+</html>
+

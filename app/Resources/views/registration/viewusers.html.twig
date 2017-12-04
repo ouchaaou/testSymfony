@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+
+
+<div class="main-containera">
+
+<div class="container-fluid">
+
+
+<div class="row" style="padding:10px; background:white;">
+<legend>View Users</legend>
+<table class="table table-bordered">
+<tr>
+<th>Id</th>
+<th>Username</th>
+<th>Email</th>
+<th>Mobile</th>
+<th>Company</th>
+<th>Address</th>
+<th>Role</th>
+<th>Action</th>
+</tr>
+
+{% for item in products %}
+<tr>
+<td>{{ item.id }}</td>
+<td>{{ item.username }}</td>
+<td>{{ item.email }}</td>
+<td>{{ item.mobile }}</td>
+<td>{{ item.company }}</td>
+<td>{{ item.address }}</td>
+<td>{{ item.role }}</td>
+<td><a href="edituser/{{item.id}}" class="btn btn-primary">Edit</a></td>
+</tr>
+{% endfor %}
+</table>
+
+</div>
+</div>
+   
+<!--Footer Start Here -->
+
+<script type="text/javascript">
+$("#viewreport").click();
+</script>
+
+<script type="text/javascript">
+
+if($("#messageexi").text()=="")
+{
+	$("#closemodal").click();
+}
+else
+{
+	//$("#viewreport").click();
+}
+</script>
+     
+ 
+           
+        
+    
+    
+    
+
+</div>
+
+
+{% endblock %}
